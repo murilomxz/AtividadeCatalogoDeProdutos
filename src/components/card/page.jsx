@@ -2,13 +2,14 @@
 
 export default function Card({ name, description, price, image }) {
   return (
-  <div className="col">
+  <div className="col-12 col-sm-12 col-md-12 col-lg-6">
     <div className="bg-white rounded-xl shadow p-4 d-lg-flex d-md-flex"
   >
     
-      <div className="relative w-full h-40 mb-3">
-      <img src={image} alt="" />
-      </div>
+    <div className="relative w-full h-40 mb-3 d-flex justify-content-center ">
+  <img src={image} alt=""  />
+</div>
+
 <div className="d-flex flex-column align-items-start">
       <h2 className="text-black">{name}</h2>
       <p className="text-secondary ">{description}</p>
