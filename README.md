@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Projeto: Catálogo de Produtos com Next.js & Bootstrap
 
-## Getting Started
+**Objetivo:** Desenvolver um catálogo funcional consumindo dados reais da API [DummyJSON](https://dummyjson.com/). O foco é praticar o roteamento do Next.js e a estilização responsiva com Bootstrap.
 
-First, run the development server:
+## 🚀 Dia 1: Estrutura e Listagem de Produtos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Configuração do Ambiente:**
+    - Iniciar um novo projeto Next.js.
+    - Instalar e configurar o **Bootstrap** (importar o CSS no ponto de entrada da aplicação).
+    - Criar uma estrutura de Layout base (Navbar e Footer) que se repita em todas as páginas.
+2. **Desenvolvimento da Home:**
+    - Implementar a função de data fetching do Next.js para buscar a lista de produtos da API.
+    - Exibir os produtos em um sistema de grid (row e responsivo) com cards (cartões) contendo imagem, título, preço e um link para detalhes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Dia 2: Detalhes do Produto e Refinamentos
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. **Página de Detalhes Dinâmica:**
+    - Criar a rota dinâmica para os produtos.
+    - Capturar o ID do produto pela URL e buscar as informações específicas na API.
+    - Exibir os dados completos: Galeria de imagens, descrição detalhada, categoria, avaliação e nível de estoque.
+2. **Interface e Experiência:**
+    - Garantir que todos os links de navegação usem o componente correto do Next.js para evitar recarregamento de página.
+    - Personalizar o layout com Bootstrap para que o site seja totalmente responsivo.
+    - Tratar estados de carregamento ou erros básicos (ex: ID de produto inexistente).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Requisitos de Entrega
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Funcionalidade:** O site deve listar produtos e abrir a página individual de cada um.
+- **Next.js:** Uso correto de rotas dinâmicas e métodos de busca de dados (SSG ou SSR).
+- **Bootstrap:** Interface limpa, utilizando componentes como Navbar e Cards, sem quebras no layout mobile.
+- **Organização:** Código dividido em componentes reutilizáveis.
