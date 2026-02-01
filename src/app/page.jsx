@@ -15,14 +15,15 @@ export default async function Home() {
        
         {data.products.map((product) => (
          
+<Card
+  key={product.id}
+  id={product.id}
+  name={product.title}
+  description={product.description}
+  price={product.price}
+  image={product.thumbnail}
+/>
 
-          <Card
-            key={product.id}
-            name={product.title}
-            description={product.description}
-            price={product.price}
-            image={product.thumbnail}
-          />
       
         ))}
     
