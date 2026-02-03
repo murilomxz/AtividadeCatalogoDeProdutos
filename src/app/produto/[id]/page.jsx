@@ -14,7 +14,7 @@ export default async function ProdutoPage({ params }) {
       <div className="container">
 
       
-        <Link href="/" className="btn btn-link mb-4 text-decoration-none">
+        <Link href="/" className="btn mb-4 text-decoration-none fw-bold">
           ← Voltar para produtos
         </Link>
 
@@ -36,10 +36,10 @@ export default async function ProdutoPage({ params }) {
 
            
             <div className="mb-2">
-              <span className="badge bg-secondary me-2">
+              <span className="badge bg-secondary me-2 ">
                 {product.brand}
               </span>
-              <span className="badge bg-light text-dark border">
+              <span className="badge bg-light text-dark border border-2 border-dark">
                 {product.category}
               </span>
             </div>
