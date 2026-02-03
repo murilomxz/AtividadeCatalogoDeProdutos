@@ -1,6 +1,10 @@
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Navbar() {
+  useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.min.js");
+}, []);
   return (
     <header
       className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
