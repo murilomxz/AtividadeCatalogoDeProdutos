@@ -1,6 +1,6 @@
 
 
-import AddToCartButton from "@/components/botao/page";
+
 import Link from "next/link";
 
 export default async function ProdutoPage({ params }) {
@@ -92,7 +92,7 @@ export default async function ProdutoPage({ params }) {
     Comprar agora
   </button>
 
-  <AddToCartButton product={product} />
+  
 </div>
 
             <hr className="my-5" />

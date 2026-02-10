@@ -1,5 +1,7 @@
+'use client'
+
 import Link from "next/link";
-import { useEffect } from "react";
+import React, { useEffect } from 'react';
 
 export default function Navbar() {
   useEffect(() => {
@@ -14,7 +16,7 @@ export default function Navbar() {
         href="/"
         className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none"
       >
-        <span className="fs-4 text-light">MarketPlace</span>
+        <span className="fs-4 text-light ms-3 fw-bold">MarketPlace</span>
       </Link>
 
       <ul className="nav nav-pills align-items-center">
